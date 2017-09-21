@@ -1,0 +1,33 @@
+header {
+  display: flex;
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
+  position: fixed;
+}
+
+.nav {
+  display: inline-block;
+  padding: 10px;
+}
+
+.mytimes {
+  color: MediumAquamarine;
+  padding: 7px;
+}
+
+.container {
+  display: flex;
+}
+
+.column.large {
+  width: 630px;
+}
+
+.column.medium {
+  width: 300px;
+}
+
+.column.small {
+  width: 240px;
+}
