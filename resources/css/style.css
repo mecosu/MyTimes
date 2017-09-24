@@ -1,29 +1,45 @@
 .header {
   display: flex;
+  justify-content: space-between;
   font-family: Verdana;
   font-size: 14px;
   font-weight: bold;
   position: fixed;
   border: 1px solid black;
+  align-items: center;
+  width: 100%;
 }
 
 .nav {
   padding: 10px;
   border: 1px solid black;
+  width: 240px;
 }
 
 .logo {
+  display: inline;
+  width: 100px;
+}
+
+#title {
   color: MediumAquamarine;
   padding: 7px;
-  width: 1000px;
+  font-family: Verdana;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 .container {
   display: flex;
   border: 1px solid black;
+  position: relative;
+  top: 75px;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 .column.large {
+  display: inline-block;
   width: 630px;
   border: 1px solid black;
 }
@@ -34,6 +50,106 @@
 }
 
 .column.small {
+  display: flex;
   width: 240px;
   border: 1px solid black;
+  flex-direction: column;
+}
+
+.headline {
+  display: flex;
+  width: 630px;
+  height: 315px;
+  border: 1px solid black;
+  background-image: url("file:///C:/Users/Megan/Dropbox/Projects/MyTimes/resources/images/mainstory.png");
+  color: white;
+  background-color: black;
+  background-size: cover;
+  align-items: center;
+  text-align: center;
+  font-size: 40px;
+}
+
+.cats {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  border: 1px solid black;
+  background-image: url("file:///C:/Users/Megan/Dropbox/Projects/MyTimes/resources/images/catceo.png");
+  background-color: black;
+  color: white;
+  background-size: contain;
+  align-items: center;
+  text-align: center;
+}
+
+p {
+  font-family: Georgia;
+  font-size: 17px;
+  color: black;
+  font-weight: normal;
+}
+
+h1 {
+  font-family: Georgia;
+ font-weight: bold;
+ font-size: 40px;
+}
+
+h2 {
+  font-family: Georgia;
+ font-weight: bold;
+ font-size: 30px;
+}
+
+.mainstory {
+  display: block;
+  width: 630px;
+  height: auto;
+  border: 1px solid black;
+}
+
+.orca {
+  display: inline-block;
+  width: 300px;
+  border: 1px solid black;
+}
+
+.burger {
+    display: inline-block;
+    width: 300px;
+    border: 1px solid black;
+}
+
+.earth {
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    color: white;
+    background-image: url("file:///C:/Users/Megan/Dropbox/Projects/MyTimes/resources/images/fallseason.png");
+}
+
+.research {
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    background-image: url("file:///C:/Users/Megan/Dropbox/Projects/MyTimes/resources/images/hipstercameraman.png");
+    color: white;
+}
+
+.cookie {
+  height: 240px;
+  width: 240px;
+  background-image: url("file:///C:/Users/Megan/Dropbox/Projects/MyTimes/resources/images/cookie.png");
+}
+
+.footer {
+  width: 100%;
+  background-color:  MediumAquamarine;
 }
