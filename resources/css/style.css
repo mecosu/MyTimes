@@ -5,20 +5,40 @@
   font-size: 14px;
   font-weight: bold;
   position: fixed;
-  border: 1px solid black;
+  border-bottom: 1px solid black;
   align-items: center;
   width: 100%;
+  z-index: 5;
+  background-color: white;
+  padding: 10px;
 }
 
 .nav {
+  width: 350px;
+}
+
+.navlink {
   padding: 10px;
-  border: 1px solid black;
-  width: 240px;
+}
+
+a:link {
+  color: black;
+}
+
+a:active {
+  color: black;
+}
+
+a:hover {
+  color: black
+}
+
+a:visited {
+  color: black;
 }
 
 .logo {
-  display: inline;
-  width: 100px;
+  display: inline-flex;
 }
 
 #title {
@@ -31,36 +51,37 @@
 
 .container {
   display: flex;
-  border: 1px solid black;
   position: relative;
   top: 75px;
   justify-content: center;
   flex-wrap: wrap;
+  padding-bottom: 100px;
+  width: 100%;
 }
 
 .column.large {
   display: inline-block;
   width: 630px;
-  border: 1px solid black;
+  padding: 50px 15px 50px 0px;
+  justify-content: space-between
 }
 
 .column.medium {
   width: 300px;
-  border: 1px solid black;
+  padding: 20px 15px;
 }
 
 .column.small {
   display: flex;
   width: 240px;
-  border: 1px solid black;
   flex-direction: column;
+  padding: 50px 0px 50px 15px;
 }
 
 .headline {
   display: flex;
   width: 630px;
   height: 315px;
-  border: 1px solid black;
   background-image: url("file:///C:/Users/Megan/Dropbox/Projects/MyTimes/resources/images/mainstory.png");
   color: white;
   background-color: black;
@@ -74,7 +95,6 @@
   display: flex;
   width: 300px;
   height: 300px;
-  border: 1px solid black;
   background-image: url("file:///C:/Users/Megan/Dropbox/Projects/MyTimes/resources/images/catceo.png");
   background-color: black;
   color: white;
@@ -83,7 +103,7 @@
   text-align: center;
 }
 
-p {
+.story {
   font-family: Georgia;
   font-size: 17px;
   color: black;
@@ -102,23 +122,26 @@ h2 {
  font-size: 30px;
 }
 
+h3 {
+  font-size: 16px;
+font-weight: bold;
+}
+
 .mainstory {
   display: block;
   width: 630px;
   height: auto;
-  border: 1px solid black;
 }
 
 .orca {
   display: inline-block;
   width: 300px;
-  border: 1px solid black;
+  margin-right: 20px;
 }
 
 .burger {
     display: inline-block;
     width: 300px;
-    border: 1px solid black;
 }
 
 .earth {
@@ -127,8 +150,8 @@ h2 {
     text-align: center;
     width: 300px;
     height: 300px;
-    border: 1px solid black;
     color: white;
+    margin-right: 20px;
     background-image: url("file:///C:/Users/Megan/Dropbox/Projects/MyTimes/resources/images/fallseason.png");
 }
 
@@ -138,7 +161,6 @@ h2 {
     text-align: center;
     width: 300px;
     height: 300px;
-    border: 1px solid black;
     background-image: url("file:///C:/Users/Megan/Dropbox/Projects/MyTimes/resources/images/hipstercameraman.png");
     color: white;
 }
@@ -149,7 +171,40 @@ h2 {
   background-image: url("file:///C:/Users/Megan/Dropbox/Projects/MyTimes/resources/images/cookie.png");
 }
 
+.newsbites {
+  background-color: WhiteSmoke;
+ font-family: Verdana;
+ font-size: 12px;
+ color: DimGray;
+ }
+
+.list {
+ border-bottom: 1px solid black;
+  padding-bottom: 10px;
+  padding-left: 15px;
+  background-color: WhiteSmoke;
+}
+
 .footer {
+  display: inline-flex;
   width: 100%;
   background-color:  MediumAquamarine;
+ font-family: Verdana;
+ font-size: 12px;
+ height: 300px;
+ font-weight: normal;
+ align-items: center;
+ justify-content: center;
+ position: relative;
+}
+
+#mytimes {
+  font-family: Georgia;
+  font-size: 16px;
+  font-weight: bold;
+  color: white;
+}
+
+#copyright {
+  display: block;
 }
